@@ -32,6 +32,14 @@ if (!admin.apps.length) {
 
 app.use('/api', dashboardRoutes);
 
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "IoT Backend Server is running on Vercel Serverless!",
+    timestamp: new Date()
+  });
+});
+
 if (process.env.NODE_ENV !== 'production') {
   const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => {
