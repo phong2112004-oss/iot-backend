@@ -8,7 +8,6 @@ import dashboardRoutes from './routes/dashboardRoutes.js';
 
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
-const serviceAccount = require('../serviceAccountKey.json');
 
 const app = express();
 
