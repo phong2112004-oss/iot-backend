@@ -34,7 +34,8 @@ if (!admin.apps.length) {
         ? process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n') 
         : undefined
     }),
-    databaseURL: "https://ahuproject-b5139-default-rtdb.asia-southeast1.firebasedatabase.app/"
+    databaseURL: "https://ahuproject-b5139-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    databaseAuthVariableOverride: null
   });
 }
 
