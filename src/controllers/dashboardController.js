@@ -47,7 +47,7 @@ export const updateMonitorButtons = async (req, res) => {
   try {
     const incomingUpdates = req.body;
     if (!incomingUpdates || Object.keys(incomingUpdates).length === 0) {
-      return res.status(400).json({ success: false, message: "Không nhận được trường cập nhật nào!" });
+      return res.status(400).json({ success: false, message: "No updates provided." });
     }
 
     const db = admin.database();
